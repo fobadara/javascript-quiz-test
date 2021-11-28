@@ -27,3 +27,33 @@ h1,h2 {
     justify-content: center;
     align-items:center;
 }
+
+.btn {
+    font-size: 25px;
+    padding: 16px 0;
+    width: 15rem;
+    text-align:center;
+    margin-bottom: 1rem;
+    text-decoration:none;
+    color: rgb(0,0,0);
+/*     background: rgb(212,175,55); */
+    background:linear-gradient(180deg, rgb(212,175,55),rgb(255,165,0));
+    border-radius: 4px
+}
+
+.btn:hover {
+    cursor: pointer;
+    height: 2rem;
+/*     transform: scale(1.0); */
+}
+
+/* .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+} */
+
+#highscore-btn {
+    background:linear-gradient(180deg, rgb(238, 75, 43),rgb(136, 8, 8));
+}
+

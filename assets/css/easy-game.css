@@ -8,7 +8,7 @@ body {
     width: 100%;
     border-radius: 4px;
     background: rgb(212,175,55);
-    font-size: 3rem;
+    font-size: 1.5rem;
     /* min-width: 80rem; */
 }
 
@@ -23,10 +23,16 @@ body {
     padding: 2rem 2.5rem;
 }
  */
-.choice-text {
-    padding: 1rem;
+ 
+ .choice-text {
+    padding-left: 0.5rem;
     width: 100%;
 }
+
+/* #question {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+} */
 
 .correct {
     background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
@@ -41,6 +47,7 @@ body {
 #hud {
     display: flex;
     justify-content: space-between;
+    padding-top: 4rem;
 }
 
 .hud-prefix {
@@ -52,6 +59,22 @@ body {
 .hud-main-text {
     text-align: center;
 }
+
+#progressBar {
+    width: 10rem;
+    height: 2rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    border-radius: 50px;
+    margin: 0.6rem 0 4rem;
+}
+
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
+}
+
 
 /* @media screen and (max-width: 768px) {
     .choice-container {

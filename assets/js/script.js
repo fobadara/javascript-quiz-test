@@ -20,81 +20,81 @@ let questions = [
         answer: 2,
     },
     {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
+        question: "What is 3 + 3?",
+        choice1: "6",
+        choice2: "9",
+        choice3: "5",
+        choice4: "18",
+        answer: 1,
+    },
+    {
+        question: "What is 4 + 4?",
+        choice1: "9",
+        choice2: "14",
+        choice3: "7",
+        choice4: "8",
+        answer: 4,
+    },
+    {
+        question: "What is 5 + 5?",
+        choice1: "4",
+        choice2: "7",
         choice3: "6",
+        choice4: "10",
+        answer: 4,
+    },
+    {
+        question: "What is 6 + 6?",
+        choice1: "42",
+        choice2: "14",
+        choice3: "96",
+        choice4: "12",
+        answer: 4,
+    },
+    {
+        question: "What is 7 + 7?",
+        choice1: "2",
+        choice2: "14",
+        choice3: "26",
         choice4: "8",
         answer: 2,
     },
     {
-        question: "What is 2 + 2?",
+        question: "What is 8 + 8?",
         choice1: "2",
-        choice2: "4",
-        choice3: "6",
+        choice2: "14",
+        choice3: "16",
         choice4: "8",
-        answer: 2,
+        answer: 3,
     },
     {
-        question: "What is 2 + 2?",
-        choice1: "2",
+        question: "What is 9 + 9?",
+        choice1: "12",
         choice2: "4",
-        choice3: "6",
-        choice4: "8",
-        answer: 2,
+        choice3: "46",
+        choice4: "18",
+        answer: 4,
     },
     {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "6",
-        choice4: "8",
-        answer: 2,
+        question: "What is 10 + 10?",
+        choice1: "20",
+        choice2: "14",
+        choice3: "60",
+        choice4: "80",
+        answer: 1,
     },
     {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
+        question: "What is 20 + 20?",
+        choice1: "12",
+        choice2: "40",
         choice3: "6",
-        choice4: "8",
-        answer: 2,
-    },
-    {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "6",
-        choice4: "8",
-        answer: 2,
-    },
-    {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "6",
-        choice4: "8",
-        answer: 2,
-    },
-    {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "6",
-        choice4: "8",
-        answer: 2,
-    },
-    {
-        question: "What is 2 + 2?",
-        choice1: "2",
-        choice2: "4",
-        choice3: "6",
-        choice4: "8",
+        choice4: "78",
         answer: 2,
     },
 ]
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const SCORE_POINTS = 10
+const MAX_QUESTIONS = 10
 
 startGame = () => {
     questionCounter = 0
@@ -112,7 +112,7 @@ getNewQuestion = () => {
 
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 10}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
@@ -148,7 +148,7 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
 
-        }, 1000)
+        }, 100)
     
     })
 })

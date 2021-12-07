@@ -1,30 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
 
-    <title>JavaScript Quiz Test</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+
+  <title>JavaScript Quiz Test</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="heading">JavaScript Test Quiz</h1>
+  <header class="flex-row">
+    <h1 class="heading">JavaScript Test Quiz</h1>
+
+    <nav class="flex-row">
+      <div class="btn level  nav-level" id="easy">Easy</div>
+      <div class="btn level  nav-level" id="medium">Medium</div>
+      <div class="btn level  nav-level" id="hard">Difficult</div>
+      <div id="highscore-btn" class="btn nav-level level">High Scores</div>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <main>
+      <div id="home-page">
         <div class="intro-text">
-            The quiz is to test your knowledge about JavaScript. The test come in three levels; easy, medium and difficult. Each level contains 10 questions and there is no time limit. You will get 10 points for each correct answer. At the end of the quiz, your total score will be displayed. Maximum score for each level is 100 points. 
+          The quiz is to test your knowledge about JavaScript. The test come in three level s; easy, medium and
+          difficult.
+          Each level  contains 10 questions and there is no time limit. You will get 10 points for each correct answer.
+          At
+          the end of the quiz, your total score will be displayed. Maximum score for each level  is 100 points.
         </div>
         <div class="flex-column flex-center">
-            <h2>Start the Quiz</h2>
-            <a href="/easy-game.html" class="btn level" id="easy">Easy</a>
-            <a href="/medium-game.html" class="btn level" id="medium">Medium</a>
-            <a href="/difficult-game.html" class="btn level" id="hard">Difficult</a>
-            <a href="/highscores.html" id="highscore-btn" class="btn">High Scores</a>
+          <h2>Start the Quiz</h2>
+          <div class="btn level" id="easy">Easy</div>
+          <div class="btn level" id="medium">Medium</div>
+          <div class="btn level" id="hard">Difficult</div>
+          <div id="highscore-btn" class="btn">High Scores</div>
         </div>
-    </div>
+      </div>
+      <!-- questions page -->
+      <div id="questions-page">
+        <div id="game" class="justify-center flex-column">
+          <div id="hud">
+            <div class="hud-item">
+              <p id="progressText" class="hud-prefix">
+                Question
+              </p>
+              <div id="progressBar">
+                <div id="progressBarFull"></div>
+              </div>
+            </div>
+            <div class="hud-item">
+              <p class="hud-prefix">
+                Score
+              </p>
+              <h1 class="hud-main-text" id="score">
+                0
+              </h1>
+            </div>
+          </div>
+          <h2 id="question">What is the answer to this question</h2>
+          <div class="choice-container">
+            <p class="choice-prefix">A.</p>
+            <p class="choice-text" data-number="1">choice1</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">B.</p>
+            <p class="choice-text" data-number="2">choice2</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">C.</p>
+            <p class="choice-text" data-number="3">choice3</p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">D.</p>
+            <p class="choice-text" data-number="4">choice4</p>
+          </div>
+        </div>
+      </div>
+      <!-- end page -->
+      <div id="end-page">
+        <h1>End page</h1>
+      </div>
+    </main>
 
-    <script src="/assets/js/script.js"></script>
-    
+    <footer>
+      <p>&copy <a href="https://www.github.com/oyindamolabadara">Bonita Becky</a></p>
+    </footer>
+
+  </div>
+
+  <script src="/assets/js/script.js"></script>
+
 </body>
+
 </html>

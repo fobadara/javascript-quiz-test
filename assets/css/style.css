@@ -75,6 +75,10 @@ header {
   justify-content: space-between;
 }
 
+#nav {
+  display: none;
+}
+
 nav .nav-level {
   width: fit-content;
   padding: 0.2em;
@@ -168,7 +172,7 @@ nav .nav-level {
 }
 
 #questions-page,
-e#end-page {
+#end-page {
   display: none;
 }
 

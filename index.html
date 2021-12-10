@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/style.css">
-
-
+  <link rel="stylesheet" href="/assets/css/normalize.css">
   <title>JavaScript Quiz Test</title>
 </head>
 
@@ -19,7 +18,7 @@
       <div class="btn level  nav-level" id="easy">Easy</div>
       <div class="btn level  nav-level" id="medium">Medium</div>
       <div class="btn level  nav-level" id="hard">Difficult</div>
-      <div id="highscore-btn" class="btn nav-level level">High Scores</div>
+      <div id="highscores-btn" class="btn nav-level level">HighScores</div>
     </nav>
   </header>
 
@@ -39,7 +38,7 @@
           <div class="btn level" id="easy">Easy</div>
           <div class="btn level" id="medium">Medium</div>
           <div class="btn level" id="hard">Difficult</div>
-          <div id="highscore-btn" class="btn">High Scores</div>
+          <div id="highscores-btn" class="btn">HighScores</div>
         </div>
       </div>
       <!-- questions page -->
@@ -83,8 +82,15 @@
         </div>
       </div>
       <!-- end page -->
-      <div id="end-page">
-        <h1>End page</h1>
+      <div id="scores-page">
+        <div id="scores">
+
+        </div>
+        <form id="input">
+          <input type="text" id="name" required placeholder="Add your name to the genius list">
+          <span id="error"></span>
+          <button type="submit" id="name-btn">submit</button>
+        </form>
       </div>
     </main>
 
@@ -95,7 +101,6 @@
   </div>
 
   <script src="/assets/js/script.js"></script>
-
 </body>
 
 </html>

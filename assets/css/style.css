@@ -58,7 +58,7 @@ h2 {
     transform: none;
 } */
 
-#highscore-btn {
+#highscores-btn {
   background: linear-gradient(180deg, rgb(238, 75, 43), rgb(136, 8, 8));
 }
 
@@ -172,7 +172,7 @@ nav .nav-level {
 }
 
 #questions-page,
-#end-page {
+#scores-page {
   display: none;
 }
 
